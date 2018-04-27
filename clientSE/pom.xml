@@ -42,7 +42,7 @@
         <dependency>
             <groupId>be.atbash.config</groupId>
             <artifactId>atbash-config-client</artifactId>
-            <version>${atbash-config.version}</version>
+            <version>${parent.version}</version>
         </dependency>
 
         <dependency>
