@@ -1,6 +1,6 @@
 = Atbash Configuration server
 Rudy De Busscher <rdebusscher@gmail.com>
-v0.9.0, ??/??/2018
+v0.9.0, 01/05/2018
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
@@ -16,7 +16,7 @@ User manual for Atbash configuration server.
 
 == Introduction
 
-Instead of having the microprofile configuration values within each application, they are now supplied by a server and centrally maintained.
+Instead of having the MicroProfile configuration values within each application, they are now supplied by a server and centrally maintained.
 
 Within the configuration of the server, we can define which client applications are known(supported) and the _root_ directory where the configuration files are stored.
 
@@ -93,7 +93,7 @@ The port can be changed by the _httpPort_ within the Maven Profile.
 
 == Client connector
 
-Atbash configuration project has a connector (ConfigSource) which connects with the Config server and integrates the call to the server within the Config.
+This project also has a connector (ConfigSource) which connects with the Config server and integrates the call to the server within the Config.
 
 It can be used from within Java EE, Java SE and MicroProfile.
 
@@ -107,4 +107,4 @@ The maven artefact of the client configuration is
     </dependency>
 ----
 
-More info can be found at https://github.com/atbashEE/atbash-config/blob/master/client/src/main/doc/manual.adoc
+More info can be found at https://github.com/atbashEE/atbash-config-server/blob/master/client/src/main/doc/manual.adoc

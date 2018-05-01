@@ -40,6 +40,11 @@
     <inceptionYear>2018</inceptionYear>
     <description>Atbash Configuration Server Parent</description>
 
+    <scm>
+        <connection>scm:git:git://github.com/atbashEE/atbash-config-server.git</connection>
+        <developerConnection>scm:git:ssh://github.com:atbashEE/atbash-config-server.git</developerConnection>
+        <url>http://github.com/atbashEE/atbash-config-server/tree/master</url>
+    </scm>
 
     <developers>
         <developer>

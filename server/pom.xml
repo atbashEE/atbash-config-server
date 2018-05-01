@@ -34,8 +34,7 @@
 
     <properties>
 
-        <version.wildfly.swarm>2018.3.3</version.wildfly.swarm>
-        <jwt-support.version>0.5.0-SNAPSHOT</jwt-support.version>
+        <jwt-support.version>0.5.0</jwt-support.version>
 
         <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
         <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
@@ -45,18 +44,6 @@
     <name>Atbash Configuration Server</name>
     <inceptionYear>2018</inceptionYear>
     <description>Atbash Configuration Server</description>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>bom-all</artifactId>
-                <version>${version.wildfly.swarm}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -152,6 +139,22 @@
         </profile>
         <profile>
             <id>wildfly-swarm</id>
+
+            <dependencyManagement>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.wildfly.swarm</groupId>
+                        <artifactId>bom-all</artifactId>
+                        <version>${version.wildfly.swarm}</version>
+                        <scope>import</scope>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </dependencyManagement>
+
+            <properties>
+                <version.wildfly.swarm>2018.3.3</version.wildfly.swarm>
+            </properties>
             <dependencies>
                 <dependency>
                     <groupId>org.wildfly.swarm</groupId>
