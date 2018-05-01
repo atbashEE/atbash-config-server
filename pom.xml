@@ -23,7 +23,7 @@
 
     <groupId>be.atbash.config</groupId>
     <artifactId>config-server-parent</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -39,6 +39,7 @@
     <name>Atbash Configuration Server Parent</name>
     <inceptionYear>2018</inceptionYear>
     <description>Atbash Configuration Server Parent</description>
+    <url>https://github.com/atbashEE/atbash-config-server</url>
 
     <scm>
         <connection>scm:git:git://github.com/atbashEE/atbash-config-server.git</connection>
@@ -90,6 +91,7 @@
                         <exclude>**/LICENSE.txt</exclude>
                         <exclude>**/NOTICE.txt</exclude>
                         <exclude>**/NOTICE</exclude>
+                        <exclude>**/commands.txt</exclude>
                     </excludes>
                     <mapping>
                         <java>SLASHSTAR_STYLE</java>
