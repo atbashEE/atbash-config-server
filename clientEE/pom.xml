@@ -25,12 +25,12 @@
 
         <groupId>be.atbash.config</groupId>
         <artifactId>config-server-parent</artifactId>
-        <version>0.9.0</version>
+        <version>0.9.1-SNAPSHOT</version>
     </parent>
 
     <groupId>be.atbash.config.demo</groupId>
     <artifactId>client-ee</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
 
