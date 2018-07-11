@@ -1,6 +1,6 @@
 = Atbash Configuration server
 Rudy De Busscher <rdebusscher@gmail.com>
-v0.9.0, 01/05/2018
+v0.9.1, ??/??/2018
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
@@ -8,6 +8,11 @@ ifndef::sourcedir[:sourcedir: ../../main/java]
 User manual for Atbash configuration server.
 
 == Release Notes
+
+=== 0.9.1
+
+. Support for Payara micro
+. update to latest Atbash config version
 
 === 0.9.0
 
@@ -22,7 +27,7 @@ Within the configuration of the server, we can define which client applications 
 
 == Configuration
 
-Define within a _config-server.properties_ or _config-sever.yaml_ file the following configuration information.
+Define within a _config-server.properties_ or _config-server.yaml_ file the following configuration information.
 
 * rootDirectory : Root directory containing the configuration files for the application. See further for a directory structure.
 * applications : List of known applications.
@@ -90,6 +95,20 @@ java -jar config-server-swarm.jar
 ----
 
 The port can be changed by the _httpPort_ within the Maven Profile.
+
+=== Payara micro runnable jar
+
+Payara micro 5.182 and later implement the MicroProfile 1.2 config implementation. An executable jar based on Payara micro is thus also capable of running the Configuration server.
+
+Building
+----
+mvn clean package -Ppayara-micro
+----
+
+Running
+----
+java -jar config-server-microbundle.jar
+----
 
 == Client connector
 

@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 
-#WildFly-swarm
-#config.server.url=http://localhost:8181
-#Payara-micro
-config.server.url=http://localhost:8080
-#Open Liberty
-#config.server.url=http://localhost:8181/config-server
-config.server.app=app1
-config.server.stage=test
+mvn clean install -Ppayara-micro
+
+java  -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar server/target/config-server-microbundle.jar
