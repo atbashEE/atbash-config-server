@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-rootDirectory : /Users/rubus/atbash/temp/config-server/server/src/demo
+rootDirectory : /Users/rubus/atbash/atbash-config-server/server/src/demo
 applications : ["app1", "app2"]
