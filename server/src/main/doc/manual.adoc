@@ -1,6 +1,6 @@
 = Atbash Configuration server
 Rudy De Busscher <rdebusscher@gmail.com>
-v0.9.1, ??/??/2018
+v0.9.1, 05/08/2018
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]

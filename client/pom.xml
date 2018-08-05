@@ -24,11 +24,11 @@
     <parent>
         <groupId>be.atbash.config</groupId>
         <artifactId>config-server-parent</artifactId>
-        <version>0.9.1-SNAPSHOT</version>
+        <version>0.9.1</version>
     </parent>
 
     <artifactId>atbash-config-client</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
+    <version>0.9.1</version>
     <packaging>jar</packaging>
 
     <name>Atbash Configuration client</name>

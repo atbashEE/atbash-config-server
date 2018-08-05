@@ -1,6 +1,6 @@
 = Atbash Client ConfigSource
 Rudy De Busscher <rdebusscher@gmail.com>
-v0.9.1, ??/??/2018
+v0.9.1, 05/08/2018
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
@@ -8,6 +8,10 @@ ifndef::sourcedir[:sourcedir: ../../main/java]
 User manual for Atbash Client configSource.
 
 == Release Notes
+
+=== 0.9.1
+
+. Update to latest versions of Atbash
 
 === 0.9.0
 
