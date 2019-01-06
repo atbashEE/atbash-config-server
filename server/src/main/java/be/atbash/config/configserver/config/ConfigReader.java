@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Rudy De Busscher
+ * Copyright 2018-2019 Rudy De Busscher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,14 +17,15 @@ package be.atbash.config.configserver.config;
 
 import be.atbash.config.source.AtbashConfigSource;
 import be.atbash.config.source.ConfigType;
-import be.atbash.config.util.ResourceUtils;
 import be.atbash.util.StringUtils;
+import be.atbash.util.resource.ResourceUtil;
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,6 +35,9 @@ import java.util.List;
  */
 @ApplicationScoped
 public class ConfigReader {
+
+    @Inject
+    private ResourceUtil resourceUtil;
 
     //@ConfigProperty(name = "applications")  TODO This is not working
     private List<String> applications;
@@ -65,7 +69,7 @@ public class ConfigReader {
         for (ConfigType configType : ConfigType.values()) {
 
             String configLocation = rootDirectory + "/" + application + "/" + application + configType.getSuffix();
-            if (ResourceUtils.resourceExists(configLocation)) {
+            if (resourceUtil.resourceExists(configLocation)) {
                 result.add(new AtbashConfigSource(configType, configLocation, 150));
             }
         }
@@ -74,7 +78,7 @@ public class ConfigReader {
             for (ConfigType configType : ConfigType.values()) {
 
                 String configLocation = rootDirectory + "/" + application + "/" + application + "-" + stage + configType.getSuffix();
-                if (ResourceUtils.resourceExists(configLocation)) {
+                if (resourceUtil.resourceExists(configLocation)) {
                     result.add(new AtbashConfigSource(configType, configLocation, 200));
                 }
             }
