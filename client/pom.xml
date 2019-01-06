@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2018 Rudy De Busscher
+    Copyright 2018-2019 Rudy De Busscher
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@
     <parent>
         <groupId>be.atbash.config</groupId>
         <artifactId>config-server-parent</artifactId>
-        <version>0.9.1</version>
+        <version>0.9.1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>atbash-config-client</artifactId>
-    <version>0.9.1</version>
+    <version>0.9.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Atbash Configuration client</name>
@@ -36,7 +36,6 @@
     <url>https://raw.githubusercontent.com/atbashEE/atbash-config/master/client/src/main/doc/manual.adoc</url>
 
     <properties>
-        <jwt-support.version>0.9.0</jwt-support.version>
         <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
         <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
     </properties>

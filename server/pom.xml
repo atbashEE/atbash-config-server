@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2018 Rudy De Busscher
+    Copyright 2018-2019 Rudy De Busscher
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -25,17 +25,14 @@
 
         <groupId>be.atbash.config</groupId>
         <artifactId>config-server-parent</artifactId>
-        <version>0.9.1</version>
+        <version>0.9.1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>config-server</artifactId>
-    <version>0.9.1</version>
+    <version>0.9.1.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
-
-        <jwt-support.version>0.5.0</jwt-support.version>
-
         <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
         <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
 

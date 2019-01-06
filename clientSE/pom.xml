@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2018 Rudy De Busscher
+    Copyright 2018-2019 Rudy De Busscher
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -25,12 +25,12 @@
 
         <groupId>be.atbash.config</groupId>
         <artifactId>config-server-parent</artifactId>
-        <version>0.9.1</version>
+        <version>0.9.1.1-SNAPSHOT</version>
     </parent>
 
     <groupId>be.atbash.config.demo</groupId>
     <artifactId>client-se</artifactId>
-    <version>0.9.1</version>
+    <version>0.9.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Atbash Configuration Server SE usage example</name>
